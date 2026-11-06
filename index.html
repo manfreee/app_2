@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaApp | Dinámica con Historial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <header>
+            <h1>CheckClima</h1>
+            <p>Consulta el estado del tiempo en tiempo real</p>
+        </header>
+
+        <section class="search-section">
+            <form id="weather-form">
+                <input type="text" id="city-input" placeholder="Ingresa una ciudad..." required autocomplete="off">
+                <button type="submit" id="search-btn">Buscar</button>
+            </form>
+        </section>
+
+        <section id="weather-result" class="weather-card hidden">
+            <!-- Datos del clima inyectados por JavaScript -->
+        </section>
+
+        <section class="history-section">
+            <h3>Búsquedas Recientes</h3>
+            <ul id="history-list">
+                <!-- Historial dinámico -->
+            </ul>
+            <button id="clear-history" class="btn-clear hidden">Limpiar Historial</button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
